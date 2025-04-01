@@ -324,9 +324,11 @@ var FC = {
 jQuery(window).on("load", function () {
   var articleId = Co.ArticleId;
   var settings = {};
-  $.getScript("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js", function (data, textStatus, jqxhr) {
+  if (typeof jQuery !== 'undefined' && typeof jQuery.fn.owlCarousel !== 'undefined') {
     FC.init(Co, settings);
-  });
+  } else {
+    console.warn('Required dependencies (jQuery/OwlCarousel) not loaded');
+  }
 });
 
 //]]>
@@ -417,7 +419,8 @@ b.repeat;a.repeatDelay=b.repeatDelay;a.rotate=!1===b.rotate?"none":b.rotate;a.sa
 
 <script>
 jQuery(window).on("load",function() {
-    $.getScript( "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js", function( data, textStatus, jqxhr ) {
+	// Check if jQuery and OwlCarousel are available
+    if (typeof jQuery !== 'undefined' && typeof jQuery.fn.owlCarousel !== 'undefined') {
         var  sponsorsSlider = jQuery(".fc-sponsors .widget_content");
         sponsorsSlider.find(".separator").remove();
             sponsorsSlider.addClass("owl-carousel");
@@ -448,7 +451,9 @@ jQuery(window).on("load",function() {
                     }
                 }
             });
-    });
+    } else {
+        console.warn('Required dependencies (jQuery/OwlCarousel) not loaded');
+    }
 });
 </script>
 
