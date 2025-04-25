@@ -26,7 +26,6 @@ const checkInterval = setInterval(() => {
     }
   }
 }, 100);
-</script>
 
 jQuery(window).on("load", function () {
   const loadTime = (performance.now() - startTime).toFixed(2);
@@ -44,3 +43,5 @@ jQuery(window).on("load", function () {
     console.log('OwlCarousel status:', typeof jQuery !== 'undefined' ? typeof jQuery.fn.owlCarousel !== 'undefined' : 'jQuery not loaded');
   }
 }); 
+
+</script>
