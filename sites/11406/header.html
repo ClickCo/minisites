@@ -10,6 +10,7 @@ function checkDependencies() {
     console.log('All dependencies loaded successfully');
     return true;
   }
+  console.log(typeof jQuery !== 'undefined',typeof jQuery.fn.owlCarousel);
   return false;
 }
 
