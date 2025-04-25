@@ -1,25 +1,12 @@
 <script language="javascript" type="text/javascript" src="https://w4.chabad.org/scripts/js/os/jquery-latest.min.js?v=20170328.5" onerror="console.error('Failed to load jQuery')"></script>
-<script>
-console.log('jQuery loaded:', typeof jQuery !== 'undefined');
-</script>
 <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" onerror="console.error('Failed to load OwlCarousel')"></script>
 <script>
-console.log('OwlCarousel loaded:', typeof jQuery !== 'undefined' && typeof jQuery.fn.owlCarousel !== 'undefined');
-</script>
-<script>
 const startTime = performance.now();
-let jqueryLoaded = false;
-let owlCarouselLoaded = false;
-
 function checkDependencies() {
   const currentTime = performance.now();
   const loadTime = (currentTime - startTime).toFixed(2);
   
-  console.log(`Dependency check at ${loadTime}ms:`);
-  console.log('- jQuery loaded:', jqueryLoaded);
-  console.log('- OwlCarousel loaded:', owlCarouselLoaded);
-  
-  if (jqueryLoaded && owlCarouselLoaded) {
+  if (typeof jQuery !== 'undefined' && typeof jQuery.fn.owlCarousel !== 'undefined') {
     console.log('All dependencies loaded successfully');
     return true;
   }
