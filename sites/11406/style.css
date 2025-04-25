@@ -974,7 +974,7 @@ body > div > div > #content > .wrapper,
 .fc-slider {
   background: #eee;
   min-height: 25vw;
-  margin-top: -15px;
+  margin-top: -1px; /* was -15px -GR */
 }
 .mobile .fc-slider {
   margin-top: 0;
