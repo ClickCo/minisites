@@ -455,6 +455,14 @@ jQuery(window).on("load",function() {
         console.warn('Required dependencies (jQuery/OwlCarousel) not loaded');
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  document
+    .querySelectorAll("#tabContentMain .co_menu_item .parent br")
+    .forEach(br => br.replaceWith(document.createTextNode(" ")));
+});
+
 </script>
 
 
@@ -491,7 +499,4 @@ body.home > #header {
     margin-bottom: 0;
 }
 
-body #tabContentMain .co_menu_item .parent br {
-    display: none;
-}
 </style>
