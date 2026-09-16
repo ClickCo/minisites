@@ -418,6 +418,13 @@ b.repeat;a.repeatDelay=b.repeatDelay;a.rotate=!1===b.rotate?"none":b.rotate;a.sa
 
 
 <script>
+
+jQuery(function ($) {
+  $("#co_menu_container #tabContentMain .co_menu_item .parent a.parent").each(function () {
+    $(this).html($(this).html().replace(/<br\s*\/?>/gi, " "));
+  });
+});
+
 jQuery(window).on("load",function() {
 	// Check if jQuery and OwlCarousel are available
     if (typeof jQuery !== 'undefined' && typeof jQuery.fn.owlCarousel !== 'undefined') {
@@ -497,7 +504,265 @@ body.home > #header > .wrapper {
 }
 body.home > #header {
     margin-bottom: 0;
-    background: red;
+    }
+
+
+/* Houston Branding */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+#tabContentMain .co_menu_item.arrow .co_submenu_container a.item, #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span, body #tabContentMain .co_menu_item span.parent, body #tabContentMain .co_menu_item span.parent a, body #tabContentMain .co_menu_item.hover span.parent, body #tabContentMain .co_menu_item.hover span.parent a, body.cco_body #tabContentMain .co_menu_item span.parent, body.cco_body #tabContentMain .co_menu_item span.parent a, body.cco_body #tabContentMain .co_menu_item.hover span.parent, body.cco_body #tabContentMain .co_menu_item.hover span.parent a, body.cco_body #tabContentMain .co_submenu_container .co_column a {
+    font-family: "nunito", sans-serif !important;
+      color: #424242;
+    font-size: 15px !important;
+    letter-spacing: .3px;
 }
 
+h1, .co_body h1, .co_body h1 a, h2, .co_body h2, .co_body h2 a, h3, .co_body h3, .co_body h3 a, h4, .co_body h4, .co_body h4 a, h5, .co_body h5, .co_body h5 a, h6, .co_body h6, .co_body h6 a, .cps-container h1, .cps-container p, .cps-container h2, .co_body .content p, .co_body .content .form-all, .form-all, html body.cco_body, html body.cco_body p, a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, pre, q, ruby, s, samp, section, small, strike, strong, sub, summary, sup, table, tfoot, time, tt, u, ul, var, video {
+    font-family: "Nunito", sans-serif;
+}
+/****************/
+/* Color Set Houston */
+/***************/
+#header .wrapper #header_container.header_container .links .contact_link a {
+    background: #8E76B5;
+}
+body.home > #header {
+  
+    background: transparent;
+}
+.slider-thumbnail-switchers > a {
+  
+    padding: 1px 10px 18px;
+}
+.fc-events {
+    background: #074871;
+  }
+#BodyContainer #co_content_container > .clearfix > .g960 .article-header H1 {
+ 
+    font-size: 27px;
+   
+    font-family: "greycliff-cf", sans-serif !important;
+}
+.breadcrumbs__crumb {
+    
+    font-weight: 600;
+    letter-spacing: .3px;
+}
+.co_local_menu .item a {
+ 
+    font-size: 15px;
+    font-weight: 500;
+}
+.fc-footer-contact .footer3 b {
+    line-height: 122%;
+}
+
+  .fc-events .owl-carousel .owl-dots .owl-dot.active {
+    background: #9C6C28;
+  }
+  .fc-mission-statement [class^="widget-"].chabad_updates .item .title, .fc-mission-statement [class^="widget-"].chabad_updates .item .title a {
+    color: #54C3BB;
+  }
+  
+
+
+
+
+.title, .title a {
+    font-family: "Nunito";
+    font-weight: 900 !important;
+text-transform: none;
+}
+.fc-mission-statement [class^=widget-].chabad_updates .item .synopsis {
+  
+    color: #054771;
+}
+.fc-mission-statement [class^="widget-"].chabad_updates .item .title, .fc-mission-statement [class^="widget-"].chabad_updates .item .title a {
+    color: #054771;
+  
+}
+.fc-homepage-boxes [class^=widget-].chabad_updates .item .title a {
+    font-weight: 900 !important;
+    text-transform: none;
+    letter-spacing: .1px;
+}
+
+
+
+
+
+body.cco_body #tabContentMain .co_menu_item[aid="3898871"] span.parent {
+	position: relative;
+	color: #67BCB1;
+}
+body.cco_body #tabContentMain .co_menu_item[aid="3898871"] span.parent a.parent {
+	color: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+
+
+
+.fc-events .owl-carousel .item .title {
+margin-bottom: 4px;
+}
+.fc-events .owl-carousel .item .title a {
+    color: #54c3bb;
+      font-size: 33px;
+}
+.cps-container h1, .cps-container p, .cps-container h2, .co_body .content p, html body.cco_body, html body.cco_body p {
+ 
+    font-size: 18px;
+    line-height: 136%;
+}
+
+#header .wrapper #header_container.clearfix .site_title {
+    width: 166px;
+}
+.mobile .center_logo .margin_center a {
+     
+    width: 133px;
+}
+#header_container .topBarLink {
+display: none;
+}
+
+
+/* button */
+.fc-events .owl-carousel .item .readMore {
+font-weight: 700;
+    letter-spacing: .5px;
+}
+body.cco_body #tabContentMain .co_menu_item[aid="3898871"] span.parent,
+.fc-events .owl-carousel .item .readMore, .co_body .content .form-all .form-submit-button {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+    background: transparent;
+    padding: 10px 24px;
+    text-align: center;
+    line-height: normal;
+    border-radius: 30px;
+    overflow: hidden;
+border: none;
+}
+
+body.cco_body #tabContentMain .co_menu_item[aid="3898871"] span.parent:before,
+.fc-events .owl-carousel .item .readMore:before,.co_body .content .form-all .form-submit-button:before {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    content: "";
+    z-index: -1;
+    border-radius: 30px;
+    background: linear-gradient(to right, #54C3BB 50%, #8E76B5 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position .4s ease;
+}
+
+body.cco_body #tabContentMain .co_menu_item[aid="3898871"]:hover span.parent:before,
+.fc-events .owl-carousel .item .readMore:hover:before, .co_body .content .form-all .form-submit-button:hover:before {
+    background-position: left bottom;
+}
+
+body.cco_body #tabContentMain .co_menu_item[aid="3898871"]:hover span.parent,
+.fc-events .owl-carousel .item .readMore:hover {
+    background: transparent !important;
+}
+
+/* nav overides */
+.co_menu_item[aid="3898871"] div {
+      padding: 0 !important;
+}
+body.cco_body #tabContentMain .co_menu_item[aid="3898871"] span.parent {
+     padding: 4px 9px;
+   }
+.fc-homepage-boxes [class^=widget-].chabad_updates .item {
+       border-radius: 19px;
+}
+
+.fc-mission-statement [class^=widget-].chabad_updates .item .readMore {
+    color: #54C2BA !important;
+    font-family: "nunito";
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+.slider-thumbnail-switchers > a .title .big {
+    font-weight: 800;
+    font-size: 31px;
+    text-transform: none;
+color:#054771;
+}
+.fc-mission-statement [class^="widget-"].chabad_updates .item .readMore:hover {
+     color: #54C2BA !important;
+}
+.fc-homepage-boxes [class^=widget-].chabad_updates .item .readMore {
+    letter-spacing: .6px;
+}
+
+/* more css */
+
+
+.slider-thumbnail-switchers .switch-slider:nth-of-type(1) {
+    color: #8E76B5;
+}
+.slider-thumbnail-switchers .switch-slider:nth-of-type(2) {
+    color: #54C3BB;
+}
+.slider-thumbnail-switchers .switch-slider:nth-of-type(3) {
+    color: #B1D568;
+}
+.slider-thumbnail-switchers .switch-slider:nth-of-type(4) {
+    color: #074871;
+}
+
+.fc-homepage-boxes [class^="widget-"].chabad_updates .item:nth-of-type(12n+1) {
+    background-color: #B1D568;
+}
+.fc-homepage-boxes [class^="widget-"].chabad_updates .item:nth-of-type(12n+3) {
+    background-color: #074871;
+}
+.fc-homepage-boxes [class^="widget-"].chabad_updates .item:nth-of-type(12n+5) {
+    background-color: #8E76B5;
+}
+.fc-homepage-boxes [class^="widget-"].chabad_updates .item:nth-of-type(12n+7) {
+    background-color: #074871;
+}
+.fc-homepage-boxes [class^="widget-"].chabad_updates .item:nth-of-type(12n+9) {
+    background-color: #8E76B5;
+}
+.fc-homepage-boxes [class^="widget-"].chabad_updates .item:nth-of-type(12n+11) {
+    background-color: #B1D568;
+}
+
+.fc-footer-inner .fc-footer-column:nth-of-type(1) {
+    color: #55A6A7;
+}
+.fc-footer-inner .fc-footer-column:nth-of-type(2) {
+    color: #5672B7;
+}
+.fc-footer-inner .fc-footer-column:nth-of-type(3) {
+    color: #B1D568;
+}
+.fc-footer-inner .fc-footer-column:nth-of-type(3) button {
+    background-color: #B1D568;
+}
+.fc-footer-inner .fc-footer-column:nth-of-type(4) {
+    color: #8E76B5;
+}
+
+.fc-mission-statement [class^="widget-"].chabad_updates .item .readMore,
+.fc-mission-statement [class^="widget-"].chabad_updates .item .readMore:hover {
+    color: #135F73 !important;
+}
 </style>
